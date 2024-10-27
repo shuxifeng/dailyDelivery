@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1730047346(BasicNewsRecipe):
+    title          = 'China News'
+    oldest_article = 1
+    max_articles_per_feed = 10
+    auto_cleanup   = True
+
+    feeds          = [
+        ('南方周末-新闻', 'https://plink.anyfeeder.com/weixin/nanfangzhoumo'),
+        ('人民网-国际新闻', 'https://plink.anyfeeder.com/people/world'),
+        ('人民网-国内新闻', 'https://plink.anyfeeder.com/people/politics'),
+        ('央视新闻', 'https://plink.anyfeeder.com/weixin/cctvnewscenter'),
+        ('明报-中国', 'https://news.mingpao.com/rss/pns/s00013.xml'),
+        ('明报-国际', 'https://news.mingpao.com/rss/pns/s00014.xml'),
+        ('明报-英文', 'https://news.mingpao.com/rss/pns/s00017.xml'),
+        ('明报-作家专栏', 'https://news.mingpao.com/rss/pns/s00018.xml'),
+        ('明报-要闻', 'https://news.mingpao.com/rss/pns/s00001xml'),
+        ('明报-教育', 'https://news.mingpao.com/rss/pns/s00011.xml'),
+        ('明报-娱乐', 'https://news.mingpao.com/rss/pns/s00016.xml'),
+        ('香港经济日报-科技', 'https://www.hket.com/rss/technology'),
+    ]
