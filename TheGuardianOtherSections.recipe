@@ -5,7 +5,7 @@ from calibre.web.feeds.news import BasicNewsRecipe
 class AdvancedUserRecipe1730389205(BasicNewsRecipe):
     title          = 'The Guardian Other Sections'
     oldest_article = 1
-    max_articles_per_feed = 10
+    max_articles_per_feed = 15
     auto_cleanup   = True
 
     feeds          = [
