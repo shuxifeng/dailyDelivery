@@ -1,0 +1,14 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import BasicNewsRecipe
+
+class AdvancedUserRecipe1730389338(BasicNewsRecipe):
+    title          = 'The Guardian Special Focus'
+    oldest_article = 1
+    max_articles_per_feed = 25
+    auto_cleanup   = True
+
+    feeds          = [
+        ('ukraine', 'https://www.theguardian.com/world/ukraine/rss'),
+        ('us-elections', 'https://www.theguardian.com/us-news/us-elections-2024/rss'),
+    ]
